@@ -52,4 +52,8 @@ print(0o10) #8(8진수)
 print(0x10) #16(16진수)
 print(0xFF) #FF => 255(16진수)
 
+#10진수 -> 2진수
+print(bin(10))  #0b1010
+print(bin(9))   #0b1001
+
 

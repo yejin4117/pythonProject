@@ -56,4 +56,17 @@ print(0xFF) #FF => 255(16진수)
 print(bin(10))  #0b1010
 print(bin(9))   #0b1001
 
+#지수 표현
+print(f'지구의 나이 : {4.543e9}살')   #float
+print(f'원자의 크기 : {1e-10}')      #float
 
+#복소수
+print(9+1J-14-5J)    #(-5-4j)
+ys = 9+1J
+hj = 7-3J
+print(ys + hj)  #(16-2j)
+print(ys.real)  #9.0
+print(ys.imag)  #-3.0
+print(hj.conjugate())  #켤레복소수
+print(hj * hj.conjugate())  #(58+0j) = 49 + (-3j x 3j) = 49 + 9 = (58 + 0j)
+print(type(ys)) #<class 'complex'>

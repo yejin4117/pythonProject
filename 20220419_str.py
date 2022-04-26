@@ -86,3 +86,8 @@ s = 'name: {1}, number: {2}, soccer: {0}'
 print(s.format('손흥민', 7, True))
 s = 'name: {name}, number: {n}, soccer: {s}'
 print(s.format(name='손흥민', s=True, n=7))
+
+phone_number = '010-9793-8993'
+print(f'전화번호 뒷 네자리 : {phone_number[9:13]}')
+print(f'전화번호 뒷 네자리 : {phone_number[9:]}')   #끝까지 출력
+print(f'전화번호 뒷 네자리 : {phone_number[-4:]}')  #-값으로 출력

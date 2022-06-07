@@ -105,6 +105,7 @@ print(min(l))
 for i in range(1,9,1):
     print('2*{}={}'.format(i,2*i))
 
+print("------------------------------")
 #구구단
 for i in range(2,10,1):
     for j in range(1,10,1):

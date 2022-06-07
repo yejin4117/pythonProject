@@ -6,11 +6,11 @@ if True:
     print("실행")
 
 #교통수단 결정 문제
-# money = 15000
-if money >= 10000:
-    print("택시를 타라")
-else:
-    print("버스를 타라")
+ #money = 15000
+# if money >= 10000:
+#     print("택시를 타라")
+# else:
+#     print("버스를 타라")
 #input()은 string
 #input 함수
 x = input()

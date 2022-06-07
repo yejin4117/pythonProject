@@ -9,12 +9,21 @@ print()
 #>> 01072404658
 print('-'*20)
 
-#2) 학번 -> 학번,반,학과,번호 출력하기
-# student_number = '2210' #2학년 2반 뉴미디어 소프트웨어과 10번
+# #2) 학번 -> 학번,반,학과,번호 출력하기
+# # student_number = '2210' #2학년 2반 뉴미디어 소프트웨어과 10번
 student_number = input('학번을 입력하시오 : ')
-print(print(f'{student_number[0:1]}학년'))
-print(print(f'{student_number[1:2]}반 뉴미디어 소프트웨어과'))
-print(print(f'{student_number[2:4]}번'))
+# if student_number[1] == '1' or student_number[1] == '2':
+#     g = '뉴미디어소프트웨어과'
+# elif student_number[1] == '2' or student_number[1] == '4':
+#     g = '뉴미디어웹솔루션과'
+# elif student_number[1] == '5' or student_number[1] == '6':
+#     g = '뉴미디어디자인과'
+majors = ['','뉴미디어소프트웨어과','뉴미디어소프트웨어과'
+          ,'뉴미디어웹솔루션과','뉴미디어웹솔루션과'
+          ,'뉴미디어디자인과','뉴미디어디자인과']
+index = int(student_number[1])
+g = majors[index]
+print(print(f'{student_number[0:1]}학년{student_number[1:2]}반 {g} {student_number[2:4]}번'))
 
 print('-'*20)
 

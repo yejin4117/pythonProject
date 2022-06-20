@@ -52,21 +52,35 @@
 # number = number // 10   #5->0
 #>>20
 
-#4) 369게임(1~100)
-#>>1 2 짝 4 5 짝 ... 짝짝 100
-for number in range (1,101): #1~100
-    number_s = str(number)
-    # '3', '6', '9' 를 세자 => count
-    count = 0
-    count += number_s.count('3')
-    count += number_s.count('6')
-    count += number_s.count('9')
-    # for ch in number_s:
-    #     if ch == '3' or ch == '6' or ch == '9':
-    #         count += 1
+# #4) 369게임(1~100)
+# #>>1 2 짝 4 5 짝 ... 짝짝 100
+# for number in range (1,101): #1~100
+#     number_s = str(number)
+#     # '3', '6', '9' 를 세자 => count
+#     count = 0
+#     count += number_s.count('3')
+#     count += number_s.count('6')
+#     count += number_s.count('9')
+#     # for ch in number_s:
+#     #     if ch == '3' or ch == '6' or ch == '9':
+#     #         count += 1
+#
+#     if count == 0: #count == 0 : 숫자 출력하자
+#         print(number)
+#     else: # count != 0: count만큼 '짝' 출력하자
+#         print('짝' * count)
 
-    if count == 0: #count == 0 : 숫자 출력하자
-        print(number)
-    else: # count != 0: count만큼 '짝' 출력하자
-        print('짝' * count)
+#gugudan() : 구구단 2단 출력하자
+def gugudan():
+    dan = 2
+    for n in range(1, 9+1): # 1 <= n <= 9
+        print(f'{dan} x {n} = {dan*n}')
+gugudan()
 
+print('-' * 20)
+
+#gugudan(5) : 구구단 5단 출력하자
+def gugudan(dan=2):
+    for n in range(1, 9+1): # 1 <= n <= 9
+        print(f'{dan} x {n} = {dan*n}')
+gugudan(5)
